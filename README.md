@@ -59,9 +59,3 @@ The HTTP request that's sent from the application to our model is composed of fo
   
  The prediction is then presented to the application user through the application. The endpoint is the interface that enables communication between the application and the model, using a REST API.
  
-  
-
-- HT
-
-
-
