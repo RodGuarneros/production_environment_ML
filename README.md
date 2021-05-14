@@ -42,12 +42,19 @@ This rest API is one that uses HTTP requests and responses to enable communicati
 The HTTP request that's sent from the application to our model is composed of four parts: 
 
 - End point, often this is a Uniform Resource Locator (URL)
+
 - HTTP method, generally using the POST method only in deployment ML (we are going to create new information)
+
 - HTTP headers, additional information, like the format of the data within the message, that's passed to the receiving program.
+
 - Message (Data or Body) The final part is the message (data or body); for deployment will contain the user's data which is input into the model.
+
 - The HTTP response sent from your model to your application is composed of three parts: 
+
   -- HTTP status code: If the model successfully received and processed the user's data that was sent in the message, the status code should start with a 2, like 200.
+  
   -- HTTP headers: Additional information, like the format of the data within the message, that's passed to the receiving program.
+  
   -- Message (Data or Body): What's returned is the prediction that's provided by the model.
   
  The prediction is then presented to the application user through the application. The endpoint is the interface that enables communication between the application and the model, using a REST API.
