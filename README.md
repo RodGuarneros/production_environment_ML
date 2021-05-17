@@ -103,3 +103,11 @@ Requires only software needed to run the application, which uses computational r
 Makes application creation, replication, deletion, and maintenance easier and the same across all applications that are deployed using containers.
  
 Provides a more simple and secure way to replicate, save, and share containers.
+
+As indicated by the fourth advantage of using containers, a container script file is used to create a container.
+
+This text script file can easily be shared with others and provides a simple method to replicate a particular container.
+This container script is simply the instructions (algorithm) that is used to create a container; for Docker these container scripts are referred to as dockerfiles.
+This is shown with the image below, where the container engine uses a container script to create a container for an application to run within. These container script files can be stored in repositories, which provide a simple means to share and replicate containers. For Docker, the Docker Hub is the official repository for storing and sharing dockerfiles. Here's an example of a dockerfile that creates a docker container with Python 3.6 and PyTorch installed.
+
+
